@@ -1,0 +1,2000 @@
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg {
+    background-image: url('bg.gif');
+    background-repeat: repeat-x; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center top; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700vh; 
+    z-index: -1; 
+}
+
+.navbar {
+    background: linear-gradient(0deg, rgba(193,191,189,0) 0%, rgba(0,0,0,0.8911939775910365) 100%);
+    font-family: Quicksand, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 80px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px; 
+    height: 150px; 
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: rgb(255, 255, 255); 
+    font-size: 23px;  
+    margin-right: 25px;
+    line-height: 3;
+    position: relative; 
+    display: inline-block; 
+}
+
+li a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s ease; 
+}
+
+li a:hover::after {
+    width: 100%; 
+}
+
+.content {
+    padding: 20px;
+}
+.ilo{
+    margin-top: 850px;
+    width: 100%;
+    box-shadow: -1px 4px 59px 3px rgba(0,0,0,0.75);
+    max-width: 1880px;
+    border-radius: 70px;
+    display: grid;
+    align-items: center;  
+    justify-items: center;
+    margin-left: 100px;
+    background-image: linear-gradient(0deg, #050809 0%, #10151c 37%, #405572 71%, #3c77cb 100%);
+    height: 1050px;  
+    border-radius: 70px;
+}
+h1 {
+    font-size: 140px;
+    font-family: RUBIK;
+    text-shadow: 4px 4px 10px #000000;
+    margin-top: 350px;
+    color: white;
+    text-align: center;
+}
+.expect{
+    font-size: 100px;
+    font-family: RUBIK;
+    color: white;
+    line-height: 3;
+    text-align: center;
+    text-shadow: 1px 1px 9px rgba(0,0,0,0.75);
+}
+
+.start{
+    font-size: 60px;
+    font-family: RUBIK;
+    text-shadow: 4px 4px 10px #000000;
+    color: white;
+    text-align: center;
+    margin-top: 800px;
+}
+
+
+.circle-arrow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid white; 
+    border-bottom: 3px solid white; 
+    transform: rotate(315deg); 
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 400px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+
+}
+
+.portfolio-item {
+
+    width: 500px;
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item .aqua {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.portfolio-item .ocean {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 95px;
+}
+.portfolio-item .desc {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+    color: white;
+    font-family: RUBIK;
+    line-height: 2;
+    
+}
+
+.p1 {
+    font-family: Quicksand;
+    color: white;
+    font-size: 30px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word; 
+    
+
+}
+
+
+
+.tile{
+    font-size: 35px;
+    font-family: Quicksand;
+    color: white;
+    line-height: 4;
+}
+
+
+.t1 {
+    font-size: 100px;
+    font-family: RUBIK;
+    line-height: 2;
+    color: white;
+    text-shadow: 4px 4px 10px #000000;
+}
+
+
+.main {
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(22,29,39,1) 18%, rgba(31,58,96,1) 39%, rgba(35,70,119,1) 64%, rgba(41,148,255,1) 93%, rgba(8,8,8,0) 100%);
+    height: 7000px;
+    width: 100%;
+    padding-left: 500px;
+    padding-right: 500px;
+    
+}
+
+.c1{
+    position: relative;
+    width: 100%;
+    top: 1300px;
+    z-index: 2;
+}
+
+.main .b1 .l1 {
+    position: absolute;
+    left: 0;
+    font-size: 100px;
+    font-family: RUBIK;
+    top: 1000px;
+    color: white; 
+    text-align: left;
+    text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.l2{
+    position: absolute; 
+    top: 1150px; 
+    left: 0; 
+    font-size: 40px;
+    max-width: 700px;
+    font-family: Quicksand;
+    color: white;
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.btn {
+    position: absolute;
+    top: 1750px;
+    background-color: #024283; 
+    width: 500px;
+    height: 100px;
+    left: 19%; 
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 2.7;
+    box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover{
+    background-color: #0080ff;
+}
+.r1{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Quicksand;
+    text-align: center; 
+    display: block; /
+   
+}
+
+.container {
+    border-radius: 10px;
+    top: 1100px;
+    position: relative;
+}
+
+.slideshow {
+    position: relative;
+    width: 900px;
+    left: 53%;
+    box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+    height: 750px;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.slideshow:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+}
+
+.slideshow a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.slideshow a:after {
+    border-color: #FFF #FFF transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFF;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.slideshow .slide {
+    background-color: #FFF;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+}
+
+.slideshow .slide:first-child, .slideshow .slide:target {
+    display: block;
+}
+
+.slideshow .slide img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;  
+    left: 50%;
+    transform: translateX(1000%);  
+    z-index: 10; 
+}
+
+.pagination a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.pagination a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.pagination a span {
+    display: none;
+}
+
+.main .b2 .l3 {
+    position: absolute;
+    right: 0;
+    font-size: 100px;
+    font-family: RUBIK;
+    top: 2200px;
+    color: white; 
+    text-align: right;
+    text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+    margin: 100px;
+    margin-right: 150px;
+}
+
+.l4{
+    position: absolute;
+    top: 2350px; 
+    right: 0; 
+    font-size: 40px;
+    max-width: 700px;
+    font-family: Quicksand;
+    color: white;
+    margin: 100px;
+    margin-right: 150px;
+    text-align: right;
+}
+
+.btn1 {
+    position: absolute;
+    top: 3000px;
+    background-color: #024283; 
+    width: 500px;
+    height: 100px;
+    right: -4.5%; 
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 2.7;
+    box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease; 
+}
+
+.btn1:hover{
+    background-color: #0080ff;
+}
+
+.r2{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Quicksand;
+    text-align: center;
+    display: block; /
+   
+}
+
+.container1 {
+    border-radius: 10px;
+    top: 1560px;
+    position: relative;
+}
+
+.slideshow1 {
+    position: relative;
+    width: 800px;
+    right: 35%;
+    box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+    height: 800px;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.slideshow1:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+}
+
+.slideshow1 a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.slideshow1 a:after {
+    border-color: #FFF #FFF transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFF;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.slideshow1 .slide {
+    background-color: #FFF;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.slideshow1 .slide:first-child, .slideshow .slide:target {
+    display: block;
+}
+
+.slideshow1 .slide img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.pagination1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;  
+    right: 138%;
+    transform: translateX(1000%);  
+    z-index: 10; 
+}
+
+.pagination1 a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.pagination1 a:not(:last-child) {
+    margin-left: 5px;
+}
+
+.pagination1 a span {
+    display: none;
+}
+
+.l5 {
+    position: absolute;
+    left: 0;
+    font-size: 100px;
+    font-family: RUBIK;
+    top: 3440px;
+    color: white; /* Ensure the text color is white */
+    text-align: left;
+    text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.l6{
+    position: absolute; 
+    top: 3600px; 
+    left: 0; 
+    font-size: 40px;
+    max-width: 700px;
+    font-family: Quicksand;
+    color: white;
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 4250px;
+    background-color: #024283; 
+    width: 500px;
+    height: 100px;
+    left: 19%; 
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 2.7;
+    box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease; 
+}
+
+.btn2:hover{
+    background-color: #0080ff;
+}
+.r3{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Quicksand;
+    text-align: center; 
+    display: block; /
+   
+}
+
+.container2 {
+    border-radius: 10px;
+    top: 2000px;
+    position: relative;
+}
+
+.slideshow2 {
+    position: relative;
+    width: 680px;
+    left: 70%;
+    box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+    height: 800px;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.slideshow2:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+}
+
+.slideshow2 a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.slideshow2 a:after {
+    border-color: #FFF #FFF transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFF;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.slideshow2 .slide {
+    background-color: #FFF;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+}
+
+.slideshow2 .slide:first-child, .slideshow .slide:target {
+    display: block;
+}
+
+.slideshow2 .slide img {
+    border-radius: 5px;
+    width: 800px;
+    height: 800px;
+    
+}
+
+.pagination2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;  
+    left: 60%;
+    transform: translateX(1000%);  
+    z-index: 10;  
+}
+
+.pagination2 a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.pagination2 a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.pagination2 a span {
+    display: none;
+}
+
+ .l7 {
+    position: absolute;
+    right: 0;
+    font-size: 100px;
+    font-family: RUBIK;
+    top: 4550px;
+    color: white;
+    text-align: right;
+    text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+    margin: 100px;
+    margin-right: 150px;
+}
+
+.l8{
+    position: absolute; 
+    top: 4750px; 
+    right: 0; 
+    font-size: 40px;
+    max-width: 700px;
+    font-family: Quicksand;
+    color: white;
+    margin: 100px;
+    margin-right: 150px;
+    text-align: right;
+}
+
+.btn3 {
+    position: absolute;
+    top: 5400px;
+    background-color: #024283; 
+    width: 500px;
+    height: 100px;
+    right: -4.5%; 
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 2.7;
+    box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease; 
+}
+
+.btn3:hover{
+    background-color: #0080ff;
+}
+
+.r3{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Quicksand;
+    text-align: center; /* Center the text within the button */
+    display: block; /
+   
+}
+
+.container3 {
+    border-radius: 10px;
+    top: 2320px;
+    position: relative;
+}
+
+.slideshow3 {
+    position: relative;
+    width: 600px;
+    right: 35%;
+    box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+    height: 850px;
+    overflow: hidden; /* Prevent overflow of images */
+    border-radius: 20px;
+}
+
+.slideshow3:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+}
+
+.slideshow3 a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.slideshow3 a:after {
+    border-color: #FFF #FFF transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFF;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.slideshow3 .slide {
+    background-color: #FFF;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.slideshow3 .slide:first-child, .slideshow .slide:target {
+    display: block;
+}
+
+.slideshow3 .slide img {
+    border-radius: 5px;
+    width: 100%;
+    height: 1000px;
+    
+}
+
+.pagination3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+    right: 147%;
+    transform: translateX(1000%);  /* Center horizontally */
+    z-index: 10;  /* Ensure it stays on top */
+}
+
+.pagination3 a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.pagination3 a:not(:last-child) {
+    margin-left: 5px;
+}
+
+.pagination3 a span {
+    display: none;
+}
+
+.l9 {
+    position: absolute;
+    left: 0;
+    font-size: 100px;
+    font-family: RUBIK;
+    top: 5795px;
+    color: white; /* Ensure the text color is white */
+    text-align: left;
+    text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.l10{
+    position: absolute; 
+    top: 6000px; /* Adjust this based on where you want the text to appear */
+    left: 0; /* Align it to the left of the parent .b1 container */
+    font-size: 40px;
+    max-width: 700px;
+    font-family: Quicksand;
+    color: white;
+    margin: 100px;
+    margin-left: 150px;
+}
+
+.btn4 {
+    position: absolute;
+    top: 6490px;
+    background-color: #024283; 
+    width: 500px;
+    height: 100px;
+    left: 19%; 
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 2.7;
+    box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease; 
+}
+
+.btn4:hover{
+    background-color: #0080ff;
+}
+.r4{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Quicksand;
+    text-align: center; 
+    display: block; /
+   
+}
+
+.container4 {
+    border-radius: 10px;
+    top: 2700px;
+    position: relative;
+}
+
+.slideshow4 {
+    position: relative;
+    width: 1000px;
+    left: 40%;
+    box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+    height: 700px;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.slideshow4:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+}
+
+.slideshow4 a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.slideshow4 a:after {
+    border-color: #FFF #FFF transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFF;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.slideshow4 .slide {
+    background-color: #FFF;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+}
+
+.slideshow4 .slide:first-child, .slideshow .slide:target {
+    display: block;
+}
+
+.slideshow4 .slide img {
+    border-radius: 5px;
+    width: 1000px;
+    height: 800px;
+    
+}
+
+.pagination4 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;  
+    left: 43%;
+    transform: translateX(1000%);  
+    z-index: 10;  
+}
+
+.pagination4 a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.pagination4 a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.pagination4 a span {
+    display: none;
+}
+
+.b5 {
+    position: relative;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    background-color: black;
+    height: 300px;
+}
+
+.b5 img {
+    width: 50px;  
+    height: 50px;  
+    margin: 0 10px;  /
+}
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 50px;
+    width: 50px;  
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s, bottom 0.4s; 
+}
+
+.to-top.active {
+    bottom: 32px; 
+    pointer-events: auto; 
+    opacity: 1; 
+}
+
+.ct{
+    color: white;
+    top: 5000px;
+    font-family: Quicksand;
+}
+
+@media screen and (max-width: 900px) {
+    .to-top {
+        background: white;
+        position: fixed;
+        bottom: 16px;
+        right: 250px;
+        height: 50px;
+        width: 50px;  /* Ensure width matches height for a circular button */
+        border-radius: 50%;  /* Circular shape */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: black;
+        z-index: 10000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s, bottom 0.4s; /* Smooth opacity and bottom transitions */
+    }
+    
+    .to-top.active {
+        bottom: 32px; /* Move the button up when active */
+        pointer-events: auto; /* Allow interaction when active */
+        opacity: 1; /* Make the button visible */
+    }
+    
+    .b5, .navbar, .bg {
+        width: 100%;
+    }
+    .portfolio-container, .portfolio-item {
+        max-width: 100%;
+    }
+    .b5 {
+        position: relative;
+        display: flex;  /* Use flexbox to center child elements */
+        justify-content: center;  /* Horizontally center the images */
+        align-items: center;  /* Vertically center the images */
+        background-color: black;
+        height: 300px;
+        width: 460px;
+    }
+    
+    .b5 img {
+        width: 50px;  /* Keep fixed size */
+        height: 50px;  /* Keep fixed size */
+        margin: 0 10px;  /* Add space between images */
+    }
+    .navbar {
+        background: linear-gradient(0deg, rgba(193,191,189,0) 0%, rgba(0,0,0,0.8911939775910365) 100%);
+        font-family: Quicksand, sans-serif;
+        padding-right: 15px;
+        padding-left: 15px;
+        height: 80px;
+        width: 470px;
+    }
+    
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo img {
+        width: 150px; 
+        height: 150px; 
+    }
+    
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    li a {
+        color: rgb(255, 255, 255); 
+        font-size: 23px;  
+        margin-right: 25px;
+        line-height: 3;
+        position: relative; 
+        display: inline-block; 
+    }
+    
+    li a::after {
+        content: ''; 
+        position: absolute;
+        bottom: 5px; 
+        left: 0;
+        width: 0; 
+        height: 2px; 
+        background-color: rgb(255, 255, 255); 
+        transition: width 0.3s ease; 
+    }
+    
+    li a:hover::after {
+        width: 100%; 
+    }
+    
+    .content {
+        padding: 20px;
+        width: 440px;
+    }
+    .bg {
+        background-image: url('bg.gif');
+        background-repeat: repeat-x; 
+        background-size: cover;
+        background-attachment: fixed; 
+        background-position: center top; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 700vh; 
+        z-index: -1; 
+    }
+    .main{
+        height: auto;
+        max-height: 5000px;
+    }
+    .box1 {
+        margin-top: 200px; 
+        height: 800px; 
+        box-shadow: 0px -15px 30px rgba(0, 0, 0, 0.5); 
+    }
+
+    h1{
+        font-size: 55px;
+        margin-top: 200px;
+    }
+
+    .info {
+        margin-top: 230px;
+        
+    }
+
+    h3{
+        font-size: 40px;
+        max-width: 1000px;
+    }
+
+    p{
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    li a{
+        font-size: 17px;
+    }
+
+    .ilo{
+        display: grid;
+        width: 380px;
+        height: 1080px;
+        left: 0;
+        margin-left:30px;
+        margin-top: 250px;
+    }
+
+    
+    .expect{
+        position: relative;
+        font-size: 30px;
+        font-family: RUBIK;
+        color: white;
+        text-align: left;
+        left: 120px;
+        text-shadow: 1px 1px 9px rgba(0,0,0,0.75);
+    }
+    
+    
+    .portfolio-container {
+        display: flex; 
+        position: relative;/* Use flexbox to arrange items */
+        flex-direction: column; /* Stack the items vertically */
+        gap: 0px; /* Adjust the space between items as needed */
+        padding: 20px;
+        width: 100%; /* Ensure container takes full width */
+        max-width: 784px; /* Or any max width you prefer */
+        margin-left: 0;
+        left: 0;
+    }
+    
+    .portfolio-item {
+    
+        width: 500px;
+        height: 650px;
+        border-radius: 8px;
+        overflow: hidden;
+        
+    }
+    
+    .portfolio-item .aqua {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 30px;
+        left: 0;
+    }
+    .portfolio-item .ocean {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 80px;
+        
+    }
+    .portfolio-item .desc {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #t1 {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        font-family: RUBIK;
+        line-height: 2;
+        left: 0;
+        margin-left: 125px;
+        text-align: left;  
+    }
+    
+    #t2{
+        
+            position: relative;
+            font-size: 20px;
+            color: white;
+            font-family: RUBIK;
+            line-height: 2;
+            left: 0;
+            margin-left: 93px;
+            text-align: left;  
+
+    }
+    .p1 {
+        position: relative;
+        font-family: Quicksand;
+        color: white;
+        font-size: 10px;
+        text-align: center; 
+        word-wrap: break-word; 
+        left: 0;
+        margin-left: 5px;
+    
+    }
+    
+    
+    
+    .tile{
+        font-size: 35px;
+        font-family: Quicksand;
+        color: white;
+        line-height: 4;
+    }
+    
+    
+    .t1 {
+        font-size: 100px;
+        font-family: RUBIK;
+        line-height: 2;
+        color: white;
+        text-shadow: 4px 4px 10px #000000;
+    }
+    
+    
+    .main {
+        position: relative;
+        background-image: linear-gradient(0deg, rgba(22,29,39,1) 18%, rgba(31,58,96,1) 39%, rgba(35,70,119,1) 64%, rgba(41,148,255,1) 93%, rgba(8,8,8,0) 100%);
+        height: 7000px;
+        width: 470px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    
+    
+    
+    .main .b1 .l1 {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: RUBIK;
+        top: 1100px;
+        color: white; /* Ensure the text color is white */
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+        margin: 100px;
+        margin-left: 140px;
+    }
+    
+    .l2{
+        position: absolute; /* Use absolute positioning */
+        top: 1450px; /* Adjust this based on where you want the text to appear */
+        left: 0; /* Align it to the left of the parent .b1 container */
+        font-size: 12px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 75px;
+        text-align: center;
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .btn {
+        position: absolute;
+        top: 1660px;
+        background-color: #024283; /* Initial background color */
+        width: 300px;
+        height: 40px;
+        left: 51%; /* This is trying to center the button horizontally */
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 7px;
+        line-height: 2.7;
+        box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+        transition: background-color 0.3s ease; 
+    }
+    
+    .btn:hover{
+        background-color: #0080ff;
+    }
+    .r1{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Quicksand;
+        text-align: center; /* Center the text within the button */
+        display: block; 
+        line-height: 2;
+       
+    }
+    
+    .container {
+        border-radius: 10px;
+        top: 1260px;
+        position: relative;
+    }
+    
+    .slideshow {
+        position: relative;
+        width: 300px;
+        left: 8%;
+        box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+        height: 250px;
+        overflow: hidden; /* Prevent overflow of images */
+        border-radius: 20px;
+    }
+    
+    .slideshow:after {
+        content: "";
+        display: block;
+        padding-bottom: calc((100% / 6) * 4);
+    }
+    
+    .slideshow a {
+        opacity: 0;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.5s;
+    }
+    
+    .slideshow a:after {
+        border-color: #FFF #FFF transparent transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: #FFF;
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 10px;
+        border-radius: 20px;
+    }
+    
+    .slideshow .slide {
+        background-color: #FFF;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        border-radius: 20px;
+    }
+    
+    .slideshow .slide:first-child, .slideshow .slide:target {
+        display: block;
+    }
+    
+    .slideshow .slide img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    .pagination {
+        display: flex;
+        justify-content: center;  /* Ensures pagination items are centered horizontally */
+        position: absolute;
+        bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+        left: 52%;  /* Moves it to the center */
+        transform: translateX(-50%);  /* Correctly centers the pagination */
+        z-index: 10;  /* Ensure it* Ensure it stays on top */
+    }
+    
+    .pagination a {
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
+    
+    .pagination a:not(:last-child) {
+        margin-right: 5px;
+    }
+    
+    .pagination a span {
+        display: none;
+    }
+    
+     .main .b2 .l3 {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: RUBIK;
+        top: 1850px;
+        color: white; /* Ensure the text color is white */
+        text-align: center;
+        width: 300px;
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+        margin: 100px;
+        margin-left: 70px;
+    }
+    
+    .l4{
+        position: absolute; /* Use absolute positioning */
+        top: 2200px; /* Adjust this based on where you want the text to appear */
+        left: 0; /* Align it to the left of the parent .b1 container */
+        font-size: 12px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 75px;
+        text-align: center;
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .btn1 {
+        position: absolute;
+        top: 2430px;
+        background-color: #024283; /* Initial background color */
+        width: 300px;
+        height: 40px;
+        left: 51%; /* This is trying to center the button horizontally */
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 7px;
+        line-height: 2.7;
+        box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+        transition: background-color 0.3s ease; 
+    }
+    
+    .btn1:hover{
+        background-color: #0080ff;
+    }
+    .r2{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Quicksand;
+        text-align: center; /* Center the text within the button */
+        display: block; 
+        line-height: 2;
+       
+    }
+    
+    .container1 {
+        border-radius: 10px;
+        top: 1760px;
+        position: relative;
+    }
+    
+    .slideshow1 {
+        position: relative;
+        width: 300px;
+        left: 8%;
+        box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+        height: 250px;
+        overflow: hidden; /* Prevent overflow of images */
+        border-radius: 20px;
+    }
+    
+    .slideshow1:after {
+        content: "";
+        display: block;
+        padding-bottom: calc((100% / 6) * 4);
+    }
+    
+    .slideshow1 a {
+        opacity: 0;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.5s;
+    }
+    
+    .slideshow1 a:after {
+        border-color: #FFF #FFF transparent transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: #FFF;
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 10px;
+        border-radius: 20px;
+    }
+    
+    .slideshow1 .slide {
+        background-color: #FFF;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        border-radius: 20px;
+    }
+    
+    .slideshow1 .slide:first-child, .slideshow .slide:target {
+        display: block;
+    }
+    
+    .slideshow1 .slide img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    .pagination1 {
+        display: flex;
+        justify-content: center;  /* Ensures pagination items are centered horizontally */
+        position: absolute;
+        bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+        right: 40%;  /* Moves it to the center */
+        transform: translateX(-50%);  /* Correctly centers the pagination */
+        z-index: 10; /* Ensure it* Ensure it stays on top */
+        
+    }
+    
+    .pagination1 a {
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
+    
+    .pagination1 a:not(:last-child) {
+        margin-right: 5px;
+    }
+    
+    .pagination1 a span {
+        display: none;
+    }
+    .l5 {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: RUBIK;
+        top: 2600px;
+        color: white; /* Ensure the text color is white */
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+        margin: 100px;
+        margin-left: 120px;
+        width: 300px;
+    }
+    
+    .l6{
+        position: absolute; /* Use absolute positioning */
+        top: 2950px; /* Adjust this based on where you want the text to appear */
+        left: 0; /* Align it to the left of the parent .b1 container */
+        font-size: 12px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 75px;
+        text-align: center;
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .btn2 {
+        position: absolute;
+        top: 3190px;
+        background-color: #024283; /* Initial background color */
+        width: 300px;
+        height: 40px;
+        left: 51%; /* This is trying to center the button horizontally */
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 7px;
+        line-height: 2.7;
+        box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+        transition: background-color 0.3s ease; 
+    }
+    
+    .btn2:hover{
+        background-color: #0080ff;
+    }
+    .r3{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Quicksand;
+        text-align: center; /* Center the text within the button */
+        display: block; 
+        line-height: 2;
+       
+    }
+    
+    .container2 {
+        border-radius: 10px;
+        top: 2260px;
+        position: relative;
+    }
+    
+    .slideshow2 {
+        position: relative;
+        width: 300px;
+        left: 8%;
+        box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+        height: 250px;
+        overflow: hidden; /* Prevent overflow of images */
+        border-radius: 20px;
+    }
+    
+    .slideshow2:after {
+        content: "";
+        display: block;
+        padding-bottom: calc((100% / 6) * 4);
+    }
+    
+    .slideshow2 a {
+        opacity: 0;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.5s;
+    }
+    
+    .slideshow2 a:after {
+        border-color: #FFF #FFF transparent transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: #FFF;
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 10px;
+        border-radius: 20px;
+    }
+    
+    .slideshow2 .slide {
+        background-color: #FFF;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        border-radius: 20px;
+    }
+    
+    .slideshow2 .slide:first-child, .slideshow .slide:target {
+        display: block;
+    }
+    
+    .slideshow2 .slide img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    .pagination2 {
+        display: flex;
+        justify-content: center;  /* Ensures pagination items are centered horizontally */
+        position: absolute;
+        bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+        left: 52%;  /* Moves it to the center */
+        transform: translateX(-50%);  /* Correctly centers the pagination */
+        z-index: 10;  /* Ensure it* Ensure it stays on top */
+    }
+    
+    .pagination2 a {
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
+    
+    .pagination2 a:not(:last-child) {
+        margin-right: 5px;
+    }
+    
+    .pagination2 a span {
+        display: none;
+    }
+    .l7 {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: RUBIK;
+        top: 3300px;
+        color: white; /* Ensure the text color is white */
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+        margin: 100px;
+        margin-left: 100px;
+        width: 300px;
+    }
+    
+    .l8{
+        position: absolute; /* Use absolute positioning */
+        top: 3650px; /* Adjust this based on where you want the text to appear */
+        left: 0; /* Align it to the left of the parent .b1 container */
+        font-size: 12px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 75px;
+        text-align: center;
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .btn3 {
+        position: absolute;
+        top: 3870px;
+        background-color: #024283; /* Initial background color */
+        width: 300px;
+        height: 40px;
+        left: 51%; /* This is trying to center the button horizontally */
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 7px;
+        line-height: 2.7;
+        box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+        transition: background-color 0.3s ease; 
+    }
+    
+    .btn3:hover{
+        background-color: #0080ff;
+    }
+    .r4{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Quicksand;
+        text-align: center; /* Center the text within the button */
+        display: block; 
+        line-height: 2;
+       
+    }
+    
+    .container3 {
+        border-radius: 10px;
+        top: 2710px;
+        position: relative;
+    }
+    
+    .slideshow3 {
+        position: relative;
+        width: 300px;
+        left: 8%;
+        box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+        height: 250px;
+        overflow: hidden; /* Prevent overflow of images */
+        border-radius: 20px;
+    }
+    
+    .slideshow3:after {
+        content: "";
+        display: block;
+        padding-bottom: calc((100% / 6) * 4);
+    }
+    
+    .slideshow3 a {
+        opacity: 0;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.5s;
+    }
+    
+    .slideshow3 a:after {
+        border-color: #FFF #FFF transparent transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: #FFF;
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 10px;
+        border-radius: 20px;
+    }
+    
+    .slideshow3 .slide {
+        background-color: #FFF;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        border-radius: 20px;
+    }
+    
+    .slideshow3 .slide:first-child, .slideshow .slide:target {
+        display: block;
+    }
+    
+    .slideshow3 .slide img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    .pagination3 {
+        display: flex;
+        justify-content: center;  /* Ensures pagination items are centered horizontally */
+        position: absolute;
+        bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+        right: 40%;  /* Moves it to the center */
+        transform: translateX(-50%);  /* Correctly centers the pagination */
+        z-index: 10;  /* Ensure it* Ensure it stays on top */
+    }
+    
+    .pagination3 a {
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
+    
+    .pagination3 a:not(:last-child) {
+        margin-right: 5px;
+    }
+    
+    .pagination3 a span {
+        display: none;
+    }
+
+    .l9 {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: RUBIK;
+        top: 4100px;
+        color: white; /* Ensure the text color is white */
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.85);
+        margin: 100px;
+        margin-left: 160px;
+    }
+    
+    .l10{
+        position: absolute; /* Use absolute positioning */
+        top: 4450px; /* Adjust this based on where you want the text to appear */
+        left: 0; /* Align it to the left of the parent .b1 container */
+        font-size: 12px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 75px;
+        text-align: center;
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .btn4 {
+        position: absolute;
+        top: 4635px;
+        background-color: #024283; /* Initial background color */
+        width: 300px;
+        height: 40px;
+        left: 51%; /* This is trying to center the button horizontally */
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 7px;
+        line-height: 2.7;
+        box-shadow: 3px 1px 75px -9px rgba(0,0,0,0.75);
+        transition: background-color 0.3s ease; 
+    }
+    
+    .btn4:hover{
+        background-color: #0080ff;
+    }
+    .r5{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Quicksand;
+        text-align: center; /* Center the text within the button */
+        display: block; 
+        line-height: 2;
+       
+    }
+    
+    .container4 {
+        border-radius: 10px;
+        top: 3260px;
+        position: relative;
+    }
+    
+    .slideshow4 {
+        position: relative;
+        width: 300px;
+        left: 8%;
+        box-shadow: 1px 3px 76px -16px rgba(0, 0, 0, 0.75);
+        height: 250px;
+        overflow: hidden; /* Prevent overflow of images */
+        border-radius: 20px;
+    }
+    
+    .slideshow4:after {
+        content: "";
+        display: block;
+        padding-bottom: calc((100% / 6) * 4);
+    }
+    
+    .slideshow4 a {
+        opacity: 0;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.5s;
+    }
+    
+    .slideshow4 a:after {
+        border-color: #FFF #FFF transparent transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: #FFF;
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 10px;
+        border-radius: 20px;
+    }
+    
+    .slideshow4 .slide {
+        background-color: #FFF;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        border-radius: 20px;
+    }
+    
+    .slideshow4 .slide:first-child, .slideshow .slide:target {
+        display: block;
+    }
+    
+    .slideshow4 .slide img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    .pagination4 {
+        display: flex;
+        justify-content: center;  /* Ensures pagination items are centered horizontally */
+        position: absolute;
+        bottom: 20px;  /* Adjusts distance from bottom of slideshow */
+        left: 52%;  /* Moves it to the center */
+        transform: translateX(-50%);  /* Correctly centers the pagination */
+        z-index: 10;  /* Ensure it* Ensure it stays on top */
+    }
+    
+    .pagination4 a {
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
+    
+    .pagination4 a:not(:last-child) {
+        margin-right: 5px;
+    }
+    
+    .pagination4 a span {
+        display: none;
+    }
+
+}    
